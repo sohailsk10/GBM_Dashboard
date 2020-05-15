@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="video_violationDataSet" targetNamespace="http://tempuri.org/video_violationDataSet.xsd" xmlns:mstns="http://tempuri.org/video_violationDataSet.xsd" xmlns="http://tempuri.org/video_violationDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="video_violationConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="video_violationConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Video_Violation.Properties.Settings.GlobalReference.Default.video_violationConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_video_dayTableAdapter" GeneratorDataComponentClassName="qry_video_dayTableAdapter" Name="qry_video_day" UserDataComponentName="qry_video_dayTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.qry_video_day" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `video_year`, `video_month`, `video_day` FROM `video_violation`.`qry_video_day`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="video_year" DataSetColumn="video_year" />
+              <Mapping SourceColumn="video_month" DataSetColumn="video_month" />
+              <Mapping SourceColumn="video_day" DataSetColumn="video_day" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_video_hourTableAdapter" GeneratorDataComponentClassName="qry_video_hourTableAdapter" Name="qry_video_hour" UserDataComponentName="qry_video_hourTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.qry_video_hour" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `video_year`, `video_month`, `video_day`, `video_hour` FROM `video_violation`.`qry_video_hour`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="video_year" DataSetColumn="video_year" />
+              <Mapping SourceColumn="video_month" DataSetColumn="video_month" />
+              <Mapping SourceColumn="video_day" DataSetColumn="video_day" />
+              <Mapping SourceColumn="video_hour" DataSetColumn="video_hour" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_video_monthTableAdapter" GeneratorDataComponentClassName="qry_video_monthTableAdapter" Name="qry_video_month" UserDataComponentName="qry_video_monthTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.qry_video_month" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `video_year`, `video_month` FROM `video_violation`.`qry_video_month`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="video_year" DataSetColumn="video_year" />
+              <Mapping SourceColumn="video_month" DataSetColumn="video_month" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="qry_video_yearTableAdapter" GeneratorDataComponentClassName="qry_video_yearTableAdapter" Name="qry_video_year" UserDataComponentName="qry_video_yearTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.qry_video_year" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `video_year` FROM `video_violation`.`qry_video_year`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="video_year" DataSetColumn="video_year" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="video_viewTableAdapter" GeneratorDataComponentClassName="video_viewTableAdapter" Name="video_view" UserDataComponentName="video_viewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.video_view" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `video_year`, `video_month`, `video_day`, `video_hour`, `video_id`, `video_name`, `video_path` FROM `video_violation`.`video_view`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="video_year" DataSetColumn="video_year" />
+              <Mapping SourceColumn="video_month" DataSetColumn="video_month" />
+              <Mapping SourceColumn="video_day" DataSetColumn="video_day" />
+              <Mapping SourceColumn="video_hour" DataSetColumn="video_hour" />
+              <Mapping SourceColumn="video_id" DataSetColumn="video_id" />
+              <Mapping SourceColumn="video_name" DataSetColumn="video_name" />
+              <Mapping SourceColumn="video_path" DataSetColumn="video_path" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="violationsTableAdapter" GeneratorDataComponentClassName="violationsTableAdapter" Name="violations" UserDataComponentName="violationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.violations" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM `violations` WHERE ((`Id` = @p1) AND ((@p2 = 1 AND `video_id` IS NULL) OR (`video_id` = @p3)) AND ((@p4 = 1 AND `violation_video_path` IS NULL) OR (`violation_video_path` = @p5)) AND ((@p6 = 1 AND `violation_frame_path` IS NULL) OR (`violation_frame_path` = @p7)) AND ((@p8 = 1 AND `violation_datetime` IS NULL) OR (`violation_datetime` = @p9)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="video_id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="video_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="violation_video_path" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_video_path" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="violation_frame_path" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_frame_path" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="violation_datetime" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="violation_datetime" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO `violations` (`video_id`, `violation_video_path`, `violation_frame_path`, `violation_datetime`) VALUES (@p1, @p2, @p3, @p4)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="video_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_video_path" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_frame_path" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="violation_datetime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `Id`, `video_id`, `violation_video_path`, `violation_frame_path`, `violation_datetime` FROM `violations`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE `violations` SET `video_id` = @p1, `violation_video_path` = @p2, `violation_frame_path` = @p3, `violation_datetime` = @p4 WHERE ((`Id` = @p5) AND ((@p6 = 1 AND `video_id` IS NULL) OR (`video_id` = @p7)) AND ((@p8 = 1 AND `violation_video_path` IS NULL) OR (`violation_video_path` = @p9)) AND ((@p10 = 1 AND `violation_frame_path` IS NULL) OR (`violation_frame_path` = @p11)) AND ((@p12 = 1 AND `violation_datetime` IS NULL) OR (`violation_datetime` = @p13)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="video_id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_video_path" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_frame_path" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="violation_datetime" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p5" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="video_id" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="video_id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p8" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="violation_video_path" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p9" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_video_path" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="violation_frame_path" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p11" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="violation_frame_path" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="Int32" Scale="0" Size="0" SourceColumn="violation_datetime" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@p13" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="violation_datetime" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="video_id" DataSetColumn="video_id" />
+              <Mapping SourceColumn="violation_video_path" DataSetColumn="violation_video_path" />
+              <Mapping SourceColumn="violation_frame_path" DataSetColumn="violation_frame_path" />
+              <Mapping SourceColumn="violation_datetime" DataSetColumn="violation_datetime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_voilationsTableAdapter" GeneratorDataComponentClassName="view_voilationsTableAdapter" Name="view_voilations" UserDataComponentName="view_voilationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="video_violationConnectionString (Settings)" DbObjectName="video_violation.view_voilations" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `video_year`, `video_month`, `video_day`, `video_hour`, `video_id`, `video_name`, `video_path`, `violation_id`, `violation_video_path`, `violation_frame_path`, `violation_datetime` FROM `video_violation`.`view_voilations`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="video_year" DataSetColumn="video_year" />
+              <Mapping SourceColumn="video_month" DataSetColumn="video_month" />
+              <Mapping SourceColumn="video_day" DataSetColumn="video_day" />
+              <Mapping SourceColumn="video_hour" DataSetColumn="video_hour" />
+              <Mapping SourceColumn="video_id" DataSetColumn="video_id" />
+              <Mapping SourceColumn="video_name" DataSetColumn="video_name" />
+              <Mapping SourceColumn="video_path" DataSetColumn="video_path" />
+              <Mapping SourceColumn="violation_id" DataSetColumn="violation_id" />
+              <Mapping SourceColumn="violation_video_path" DataSetColumn="violation_video_path" />
+              <Mapping SourceColumn="violation_frame_path" DataSetColumn="violation_frame_path" />
+              <Mapping SourceColumn="violation_datetime" DataSetColumn="violation_datetime" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="video_violationDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="video_violationDataSet" msprop:Generator_UserDSName="video_violationDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="qry_video_year" msprop:Generator_TableClassName="qry_video_yearDataTable" msprop:Generator_TableVarName="tableqry_video_year" msprop:Generator_RowChangedName="qry_video_yearRowChanged" msprop:Generator_TablePropName="qry_video_year" msprop:Generator_RowDeletingName="qry_video_yearRowDeleting" msprop:Generator_RowChangingName="qry_video_yearRowChanging" msprop:Generator_RowEvHandlerName="qry_video_yearRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_video_yearRowDeleted" msprop:Generator_RowClassName="qry_video_yearRow" msprop:Generator_UserTableName="qry_video_year" msprop:Generator_RowEvArgName="qry_video_yearRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="video_year" msprop:Generator_ColumnVarNameInTable="columnvideo_year" msprop:Generator_ColumnPropNameInRow="video_year" msprop:Generator_ColumnPropNameInTable="video_yearColumn" msprop:Generator_UserColumnName="video_year" type="xs:int" />
+              <xs:element name="qry_video_month" msprop:Generator_TableClassName="qry_video_monthDataTable" msprop:Generator_TableVarName="tableqry_video_month" msprop:Generator_RowChangedName="qry_video_monthRowChanged" msprop:Generator_TablePropName="qry_video_month" msprop:Generator_RowDeletingName="qry_video_monthRowDeleting" msprop:Generator_RowChangingName="qry_video_monthRowChanging" msprop:Generator_RowEvHandlerName="qry_video_monthRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_video_monthRowDeleted" msprop:Generator_RowClassName="qry_video_monthRow" msprop:Generator_UserTableName="qry_video_month" msprop:Generator_RowEvArgName="qry_video_monthRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                  <xs:appinfo>
+                    <msdata:Relationship name="qry_video_year_qry_video_month" msdata:parent="qry_video_year" msdata:child="qry_video_month" msdata:parentkey="video_year" msdata:childkey="video_year" msprop:Generator_UserChildTable="qry_video_month" msprop:Generator_ChildPropName="Getqry_video_monthRows" msprop:Generator_UserRelationName="qry_video_year_qry_video_month" msprop:Generator_RelationVarName="relationqry_video_year_qry_video_month" msprop:Generator_UserParentTable="qry_video_year" msprop:Generator_ParentPropName="qry_video_yearRow" />
+                  </xs:appinfo>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="video_year" msprop:Generator_ColumnVarNameInTable="columnvideo_year" msprop:Generator_ColumnPropNameInRow="video_year" msprop:Generator_ColumnPropNameInTable="video_yearColumn" msprop:Generator_UserColumnName="video_year" type="xs:int" />
+                    <xs:element name="video_month" msprop:Generator_ColumnVarNameInTable="columnvideo_month" msprop:Generator_ColumnPropNameInRow="video_month" msprop:Generator_ColumnPropNameInTable="video_monthColumn" msprop:Generator_UserColumnName="video_month" type="xs:int" />
+                    <xs:element name="qry_video_day" msprop:Generator_TableClassName="qry_video_dayDataTable" msprop:Generator_TableVarName="tableqry_video_day" msprop:Generator_RowChangedName="qry_video_dayRowChanged" msprop:Generator_TablePropName="qry_video_day" msprop:Generator_RowDeletingName="qry_video_dayRowDeleting" msprop:Generator_RowChangingName="qry_video_dayRowChanging" msprop:Generator_RowEvHandlerName="qry_video_dayRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_video_dayRowDeleted" msprop:Generator_RowClassName="qry_video_dayRow" msprop:Generator_UserTableName="qry_video_day" msprop:Generator_RowEvArgName="qry_video_dayRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:appinfo>
+                          <msdata:Relationship name="qry_video_month_qry_video_day" msdata:parent="qry_video_month" msdata:child="qry_video_day" msdata:parentkey="video_year video_month" msdata:childkey="video_year video_month" msprop:Generator_UserChildTable="qry_video_day" msprop:Generator_ChildPropName="Getqry_video_dayRows" msprop:Generator_UserRelationName="qry_video_month_qry_video_day" msprop:Generator_RelationVarName="relationqry_video_month_qry_video_day" msprop:Generator_UserParentTable="qry_video_month" msprop:Generator_ParentPropName="qry_video_monthRowParent" />
+                        </xs:appinfo>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="video_year" msprop:Generator_ColumnVarNameInTable="columnvideo_year" msprop:Generator_ColumnPropNameInRow="video_year" msprop:Generator_ColumnPropNameInTable="video_yearColumn" msprop:Generator_UserColumnName="video_year" type="xs:int" />
+                          <xs:element name="video_month" msprop:Generator_ColumnVarNameInTable="columnvideo_month" msprop:Generator_ColumnPropNameInRow="video_month" msprop:Generator_ColumnPropNameInTable="video_monthColumn" msprop:Generator_UserColumnName="video_month" type="xs:int" />
+                          <xs:element name="video_day" msprop:Generator_ColumnVarNameInTable="columnvideo_day" msprop:Generator_ColumnPropNameInRow="video_day" msprop:Generator_ColumnPropNameInTable="video_dayColumn" msprop:Generator_UserColumnName="video_day" type="xs:int" />
+                          <xs:element name="qry_video_hour" msprop:Generator_TableClassName="qry_video_hourDataTable" msprop:Generator_TableVarName="tableqry_video_hour" msprop:Generator_RowChangedName="qry_video_hourRowChanged" msprop:Generator_TablePropName="qry_video_hour" msprop:Generator_RowDeletingName="qry_video_hourRowDeleting" msprop:Generator_RowChangingName="qry_video_hourRowChanging" msprop:Generator_RowEvHandlerName="qry_video_hourRowChangeEventHandler" msprop:Generator_RowDeletedName="qry_video_hourRowDeleted" msprop:Generator_RowClassName="qry_video_hourRow" msprop:Generator_UserTableName="qry_video_hour" msprop:Generator_RowEvArgName="qry_video_hourRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+                            <xs:annotation>
+                              <xs:appinfo>
+                                <msdata:Relationship name="qry_video_day_qry_video_hour" msdata:parent="qry_video_day" msdata:child="qry_video_hour" msdata:parentkey="video_year video_month video_day" msdata:childkey="video_year video_month video_day" msprop:Generator_UserChildTable="qry_video_hour" msprop:Generator_ChildPropName="Getqry_video_hourRows" msprop:Generator_UserRelationName="qry_video_day_qry_video_hour" msprop:Generator_ParentPropName="qry_video_dayRowParent" msprop:Generator_RelationVarName="relationqry_video_day_qry_video_hour" msprop:Generator_UserParentTable="qry_video_day" />
+                              </xs:appinfo>
+                            </xs:annotation>
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="video_year" msprop:Generator_ColumnVarNameInTable="columnvideo_year" msprop:Generator_ColumnPropNameInRow="video_year" msprop:Generator_ColumnPropNameInTable="video_yearColumn" msprop:Generator_UserColumnName="video_year" type="xs:int" />
+                                <xs:element name="video_month" msprop:Generator_ColumnVarNameInTable="columnvideo_month" msprop:Generator_ColumnPropNameInRow="video_month" msprop:Generator_ColumnPropNameInTable="video_monthColumn" msprop:Generator_UserColumnName="video_month" type="xs:int" />
+                                <xs:element name="video_day" msprop:Generator_ColumnVarNameInTable="columnvideo_day" msprop:Generator_ColumnPropNameInRow="video_day" msprop:Generator_ColumnPropNameInTable="video_dayColumn" msprop:Generator_UserColumnName="video_day" type="xs:int" />
+                                <xs:element name="video_hour" msprop:Generator_ColumnVarNameInTable="columnvideo_hour" msprop:Generator_ColumnPropNameInRow="video_hour" msprop:Generator_ColumnPropNameInTable="video_hourColumn" msprop:Generator_UserColumnName="video_hour" type="xs:int" />
+                                <xs:element name="video_view" msprop:Generator_TableClassName="video_viewDataTable" msprop:Generator_TableVarName="tablevideo_view" msprop:Generator_RowChangedName="video_viewRowChanged" msprop:Generator_TablePropName="video_view" msprop:Generator_RowDeletingName="video_viewRowDeleting" msprop:Generator_RowChangingName="video_viewRowChanging" msprop:Generator_RowEvHandlerName="video_viewRowChangeEventHandler" msprop:Generator_RowDeletedName="video_viewRowDeleted" msprop:Generator_RowClassName="video_viewRow" msprop:Generator_UserTableName="video_view" msprop:Generator_RowEvArgName="video_viewRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:annotation>
+                                    <xs:appinfo>
+                                      <msdata:Relationship name="qry_video_hour_video_view" msdata:parent="qry_video_hour" msdata:child="video_view" msdata:parentkey="video_year video_month video_day video_hour" msdata:childkey="video_year video_month video_day video_hour" msprop:Generator_UserChildTable="video_view" msprop:Generator_ChildPropName="Getvideo_viewRows" msprop:Generator_UserRelationName="qry_video_hour_video_view" msprop:Generator_ParentPropName="qry_video_hourRowParent" msprop:Generator_RelationVarName="relationqry_video_hour_video_view" msprop:Generator_UserParentTable="qry_video_hour" />
+                                    </xs:appinfo>
+                                  </xs:annotation>
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="video_year" msprop:Generator_ColumnVarNameInTable="columnvideo_year" msprop:Generator_ColumnPropNameInRow="video_year" msprop:Generator_ColumnPropNameInTable="video_yearColumn" msprop:Generator_UserColumnName="video_year" type="xs:int" />
+                                      <xs:element name="video_month" msprop:Generator_ColumnVarNameInTable="columnvideo_month" msprop:Generator_ColumnPropNameInRow="video_month" msprop:Generator_ColumnPropNameInTable="video_monthColumn" msprop:Generator_UserColumnName="video_month" type="xs:int" />
+                                      <xs:element name="video_day" msprop:Generator_ColumnVarNameInTable="columnvideo_day" msprop:Generator_ColumnPropNameInRow="video_day" msprop:Generator_ColumnPropNameInTable="video_dayColumn" msprop:Generator_UserColumnName="video_day" type="xs:int" />
+                                      <xs:element name="video_hour" msprop:Generator_ColumnVarNameInTable="columnvideo_hour" msprop:Generator_ColumnPropNameInRow="video_hour" msprop:Generator_ColumnPropNameInTable="video_hourColumn" msprop:Generator_UserColumnName="video_hour" type="xs:int" />
+                                      <xs:element name="video_id" msprop:Generator_ColumnVarNameInTable="columnvideo_id" msprop:Generator_ColumnPropNameInRow="video_id" msprop:Generator_ColumnPropNameInTable="video_idColumn" msprop:Generator_UserColumnName="video_id" type="xs:int" />
+                                      <xs:element name="video_name" msprop:Generator_ColumnVarNameInTable="columnvideo_name" msprop:Generator_ColumnPropNameInRow="video_name" msprop:Generator_ColumnPropNameInTable="video_nameColumn" msprop:Generator_UserColumnName="video_name" minOccurs="0">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:maxLength value="250" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="video_path" msprop:Generator_ColumnVarNameInTable="columnvideo_path" msprop:Generator_ColumnPropNameInRow="video_path" msprop:Generator_ColumnPropNameInTable="video_pathColumn" msprop:Generator_UserColumnName="video_path" minOccurs="0">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:maxLength value="500" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="violations" msprop:Generator_TableClassName="violationsDataTable" msprop:Generator_TableVarName="tableviolations" msprop:Generator_RowChangedName="violationsRowChanged" msprop:Generator_TablePropName="violations" msprop:Generator_RowDeletingName="violationsRowDeleting" msprop:Generator_RowChangingName="violationsRowChanging" msprop:Generator_RowEvHandlerName="violationsRowChangeEventHandler" msprop:Generator_RowDeletedName="violationsRowDeleted" msprop:Generator_RowClassName="violationsRow" msprop:Generator_UserTableName="violations" msprop:Generator_RowEvArgName="violationsRowChangeEvent" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:annotation>
+                                          <xs:appinfo>
+                                            <msdata:Relationship name="video_view_violations" msdata:parent="video_view" msdata:child="violations" msdata:parentkey="video_id" msdata:childkey="video_id" msprop:Generator_UserChildTable="violations" msprop:Generator_ChildPropName="GetviolationsRows" msprop:Generator_UserRelationName="video_view_violations" msprop:Generator_RelationVarName="relationvideo_view_violations" msprop:Generator_UserParentTable="video_view" msprop:Generator_ParentPropName="video_viewRow" />
+                                          </xs:appinfo>
+                                        </xs:annotation>
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+                                            <xs:element name="video_id" msprop:Generator_ColumnVarNameInTable="columnvideo_id" msprop:Generator_ColumnPropNameInRow="video_id" msprop:Generator_ColumnPropNameInTable="video_idColumn" msprop:Generator_UserColumnName="video_id" type="xs:int" minOccurs="0" />
+                                            <xs:element name="violation_video_path" msprop:Generator_ColumnVarNameInTable="columnviolation_video_path" msprop:Generator_ColumnPropNameInRow="violation_video_path" msprop:Generator_ColumnPropNameInTable="violation_video_pathColumn" msprop:Generator_UserColumnName="violation_video_path" minOccurs="0">
+                                              <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:maxLength value="500" />
+                                                </xs:restriction>
+                                              </xs:simpleType>
+                                            </xs:element>
+                                            <xs:element name="violation_frame_path" msprop:Generator_ColumnVarNameInTable="columnviolation_frame_path" msprop:Generator_ColumnPropNameInRow="violation_frame_path" msprop:Generator_ColumnPropNameInTable="violation_frame_pathColumn" msprop:Generator_UserColumnName="violation_frame_path" minOccurs="0">
+                                              <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:maxLength value="500" />
+                                                </xs:restriction>
+                                              </xs:simpleType>
+                                            </xs:element>
+                                            <xs:element name="violation_datetime" msprop:Generator_ColumnVarNameInTable="columnviolation_datetime" msprop:Generator_ColumnPropNameInRow="violation_datetime" msprop:Generator_ColumnPropNameInTable="violation_datetimeColumn" msprop:Generator_UserColumnName="violation_datetime" type="xs:dateTime" minOccurs="0" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="view_voilations" msprop:Generator_TableClassName="view_voilationsDataTable" msprop:Generator_TableVarName="tableview_voilations" msprop:Generator_TablePropName="view_voilations" msprop:Generator_RowDeletingName="view_voilationsRowDeleting" msprop:Generator_RowChangingName="view_voilationsRowChanging" msprop:Generator_RowEvHandlerName="view_voilationsRowChangeEventHandler" msprop:Generator_RowDeletedName="view_voilationsRowDeleted" msprop:Generator_UserTableName="view_voilations" msprop:Generator_RowChangedName="view_voilationsRowChanged" msprop:Generator_RowEvArgName="view_voilationsRowChangeEvent" msprop:Generator_RowClassName="view_voilationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="video_year" msprop:Generator_ColumnVarNameInTable="columnvideo_year" msprop:Generator_ColumnPropNameInRow="video_year" msprop:Generator_ColumnPropNameInTable="video_yearColumn" msprop:Generator_UserColumnName="video_year" type="xs:int" minOccurs="0" />
+              <xs:element name="video_month" msprop:Generator_ColumnVarNameInTable="columnvideo_month" msprop:Generator_ColumnPropNameInRow="video_month" msprop:Generator_ColumnPropNameInTable="video_monthColumn" msprop:Generator_UserColumnName="video_month" type="xs:int" minOccurs="0" />
+              <xs:element name="video_day" msprop:Generator_ColumnVarNameInTable="columnvideo_day" msprop:Generator_ColumnPropNameInRow="video_day" msprop:Generator_ColumnPropNameInTable="video_dayColumn" msprop:Generator_UserColumnName="video_day" type="xs:int" minOccurs="0" />
+              <xs:element name="video_hour" msprop:Generator_ColumnVarNameInTable="columnvideo_hour" msprop:Generator_ColumnPropNameInRow="video_hour" msprop:Generator_ColumnPropNameInTable="video_hourColumn" msprop:Generator_UserColumnName="video_hour" type="xs:int" minOccurs="0" />
+              <xs:element name="video_id" msprop:Generator_ColumnVarNameInTable="columnvideo_id" msprop:Generator_ColumnPropNameInRow="video_id" msprop:Generator_ColumnPropNameInTable="video_idColumn" msprop:Generator_UserColumnName="video_id" type="xs:int" />
+              <xs:element name="video_name" msprop:Generator_ColumnVarNameInTable="columnvideo_name" msprop:Generator_ColumnPropNameInRow="video_name" msprop:Generator_ColumnPropNameInTable="video_nameColumn" msprop:Generator_UserColumnName="video_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="video_path" msprop:Generator_ColumnVarNameInTable="columnvideo_path" msprop:Generator_ColumnPropNameInRow="video_path" msprop:Generator_ColumnPropNameInTable="video_pathColumn" msprop:Generator_UserColumnName="video_path" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="violation_id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnviolation_id" msprop:Generator_ColumnPropNameInRow="violation_id" msprop:Generator_ColumnPropNameInTable="violation_idColumn" msprop:Generator_UserColumnName="violation_id" type="xs:int" />
+              <xs:element name="violation_video_path" msprop:Generator_ColumnVarNameInTable="columnviolation_video_path" msprop:Generator_ColumnPropNameInRow="violation_video_path" msprop:Generator_ColumnPropNameInTable="violation_video_pathColumn" msprop:Generator_UserColumnName="violation_video_path" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="violation_frame_path" msprop:Generator_ColumnVarNameInTable="columnviolation_frame_path" msprop:Generator_ColumnPropNameInRow="violation_frame_path" msprop:Generator_ColumnPropNameInTable="violation_frame_pathColumn" msprop:Generator_UserColumnName="violation_frame_path" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="violation_datetime" msprop:Generator_ColumnVarNameInTable="columnviolation_datetime" msprop:Generator_ColumnPropNameInRow="violation_datetime" msprop:Generator_ColumnPropNameInTable="violation_datetimeColumn" msprop:Generator_UserColumnName="violation_datetime" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="violations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:violations" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+    <xs:unique name="video_view_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:video_view" />
+      <xs:field xpath="mstns:video_id" />
+      <xs:field xpath="mstns:video_hour" />
+      <xs:field xpath="mstns:video_day" />
+      <xs:field xpath="mstns:video_month" />
+      <xs:field xpath="mstns:video_year" />
+    </xs:unique>
+    <xs:unique name="qry_video_hour_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qry_video_hour" />
+      <xs:field xpath="mstns:video_year" />
+      <xs:field xpath="mstns:video_month" />
+      <xs:field xpath="mstns:video_day" />
+      <xs:field xpath="mstns:video_hour" />
+    </xs:unique>
+    <xs:unique name="qry_video_day_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qry_video_day" />
+      <xs:field xpath="mstns:video_year" />
+      <xs:field xpath="mstns:video_month" />
+      <xs:field xpath="mstns:video_day" />
+    </xs:unique>
+    <xs:unique name="qry_video_month_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qry_video_month" />
+      <xs:field xpath="mstns:video_year" />
+      <xs:field xpath="mstns:video_month" />
+    </xs:unique>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:qry_video_year" />
+      <xs:field xpath="mstns:video_year" />
+    </xs:unique>
+    <xs:unique name="view_voilations_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:view_voilations" />
+      <xs:field xpath="mstns:violation_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
