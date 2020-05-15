@@ -37,20 +37,11 @@ namespace WindowsDashboardApp
         }
 
         private void aceHome_Click(object sender, EventArgs e)
-        {//GBMIVA.Instance.Controls.Clear();
-            //GBMIVA.Instance.load_form();
+        {
             container.Controls.Clear();
-
-            //if (!container.Controls.Contains(GBMIVA.Instance))
-            //{
-            //    container.Controls.Add(GBMIVA.Instance);
-            //    GBMIVA.Instance.Dock = DockStyle.Fill;
-            //    GBMIVA.Instance.BringToFront();
-            //}
             GBMIVA gbm = new GBMIVA();
             gbm.Dock = DockStyle.Fill;
             container.Controls.Add(gbm);
-            //GBMIVA.Instance.BringToFront();
         }
 
         private void aceConfig_Click(object sender, EventArgs e)
